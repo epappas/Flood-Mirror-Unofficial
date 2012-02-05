@@ -1,0 +1,13 @@
+<Flood version='3.0' class='InputTargetDataSet' content='TestingInstancesStatistics'>
+<TestingInstancesMean>
+-0.019802 -0.0390369 
+</TestingInstancesMean>
+<TestingInstancesStandardDeviation>
+0.301068 0.384054 
+</TestingInstancesStandardDeviation>
+<TestingInstancesMinimum>
+-0.92 -1.26918 
+</TestingInstancesMinimum>
+<TestingInstancesMaximum>
+1 1.17226 
+</TestingInstancesMaximum>

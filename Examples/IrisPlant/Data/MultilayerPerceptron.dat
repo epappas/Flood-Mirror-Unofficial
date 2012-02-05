@@ -1,0 +1,70 @@
+<Flood version='3.0' class='MultilayerPerceptron'>
+<InputsNumber>
+4
+</InputsNumber>
+<HiddenLayersNumber>
+1
+</HiddenLayersNumber>
+<HiddenLayersSize>
+5 
+</HiddenLayersSize>
+<OutputsNumber>
+3
+</OutputsNumber>
+<IndependentParametersNumber>
+0
+</IndependentParametersNumber>
+<HiddenLayersActivationFunction>
+HyperbolicTangent
+</HiddenLayersActivationFunction>
+<OutputLayerActivationFunction>
+Linear
+</OutputLayerActivationFunction>
+<InputsScalingMethod>
+MeanStandardDeviation
+</InputsScalingMethod>
+<OutputsUnscalingMethod>
+None
+</OutputsUnscalingMethod>
+<NeuralParameters>
+46.8975 15.1203 1.55374 -65.9486 -19.8352 -7.24157 5.80392 0.774859 -8.35823 -7.30369 -3.40061 -3.98871 11.5884 -2.99619 -4.055 -12.5783 -20.368 19.5418 -13.1844 3.63494 5.57184 19.0457 -32.1488 45.8482 -28.0578 0.500048 -1.25288e-05 0.417906 -0.0314635 0.11508 0.00148659 0.0132737 0.48677 -1.14557 -1.69906 -4.75633 -7.10072 0.486693 -0.486826 0.0646081 1.53226 5.50576 7.10248 
+</NeuralParameters>
+<InputVariablesMean>
+5.84333 3.05733 3.758 1.19933 
+</InputVariablesMean>
+<InputVariablesStandardDeviation>
+0.828066 0.435866 1.7653 0.762238 
+</InputVariablesStandardDeviation>
+<OutputVariablesMean>
+0.333333 0.333333 0.333333 
+</OutputVariablesMean>
+<OutputVariablesStandardDeviation>
+0.472984 0.472984 0.472984 
+</OutputVariablesStandardDeviation>
+<InputVariablesMinimum>
+4.3 2 1 0.1 
+</InputVariablesMinimum>
+<InputVariablesMaximum>
+7.9 4.4 6.9 2.5 
+</InputVariablesMaximum>
+<OutputVariablesMinimum>
+0 0 0 
+</OutputVariablesMinimum>
+<OutputVariablesMaximum>
+1 1 1 
+</OutputVariablesMaximum>
+<NumericalDifferentiationMethod>
+CentralDifferences
+</NumericalDifferentiationMethod>
+<NumericalEpsilonMethod>
+Relative
+</NumericalEpsilonMethod>
+<NumericalEpsilon>
+1e-06
+</NumericalEpsilon>
+<Display>
+1
+</Display>
+<DisplayRangeOutWarning>
+0
+</DisplayRangeOutWarning>

@@ -1,0 +1,13 @@
+<Flood version='3.0' class='InputTargetDataSet' class='DataStatistics'>
+<DataMean>
+-2.858e-017 -4.67173e-017 
+</DataMean>
+<DataStandardDeviation>
+1 1 
+</DataStandardDeviation>
+<DataMinimum>
+-1.70647 -1.74287 
+</DataMinimum>
+<DataMaximum>
+1.70647 1.85593 
+</DataMaximum>

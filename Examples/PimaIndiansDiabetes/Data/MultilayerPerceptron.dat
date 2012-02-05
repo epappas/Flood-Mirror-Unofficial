@@ -1,0 +1,70 @@
+<Flood version='3.0' class='MultilayerPerceptron'>
+<InputsNumber>
+8
+</InputsNumber>
+<HiddenLayersNumber>
+1
+</HiddenLayersNumber>
+<HiddenLayersSize>
+6 
+</HiddenLayersSize>
+<OutputsNumber>
+1
+</OutputsNumber>
+<IndependentParametersNumber>
+0
+</IndependentParametersNumber>
+<HiddenLayersActivationFunction>
+HyperbolicTangent
+</HiddenLayersActivationFunction>
+<OutputLayerActivationFunction>
+Logistic
+</OutputLayerActivationFunction>
+<InputsScalingMethod>
+MeanStandardDeviation
+</InputsScalingMethod>
+<OutputsUnscalingMethod>
+None
+</OutputsUnscalingMethod>
+<NeuralParameters>
+-25.8537 6.83354 -38.6521 -37.142 6.80536 0.74134 -60.0599 -2.57776 -3.05126 16.5007 28.0561 -2.8147 6.55241 -1.60839 -17.5735 34.3726 -16.9989 -22.246 -1.62785 -9.73268 -18.8564 -4.74305 -17.2539 13.672 20.4699 22.2838 -48.116 -28.8736 -16.7825 -48.8807 -10.0041 -15.9395 -44.0672 -37.8462 -7.39048 -8.38748 -22.6558 33.6672 45.7375 -11.6425 21.0829 -46.2805 13.8683 18.5329 -26.7237 6.60961 1.21811 -18.7312 5.81314 27.9188 -32.6719 -33.7437 -17.0171 7.46161 -0.447867 -13.5932 -12.8654 -13.0111 12.6966 13.5815 -13.1622 
+</NeuralParameters>
+<InputVariablesMean>
+3.84505 120.895 69.1055 20.5365 79.7995 31.9926 0.471876 33.2409 
+</InputVariablesMean>
+<InputVariablesStandardDeviation>
+3.36958 31.9726 19.3558 15.9522 115.244 7.88416 0.331329 11.7602 
+</InputVariablesStandardDeviation>
+<OutputVariablesMean>
+0.348958 
+</OutputVariablesMean>
+<OutputVariablesStandardDeviation>
+0.476951 
+</OutputVariablesStandardDeviation>
+<InputVariablesMinimum>
+0 0 0 0 0 0 0.078 21 
+</InputVariablesMinimum>
+<InputVariablesMaximum>
+17 199 122 99 846 67.1 2.42 81 
+</InputVariablesMaximum>
+<OutputVariablesMinimum>
+0 
+</OutputVariablesMinimum>
+<OutputVariablesMaximum>
+1 
+</OutputVariablesMaximum>
+<NumericalDifferentiationMethod>
+CentralDifferences
+</NumericalDifferentiationMethod>
+<NumericalEpsilonMethod>
+Relative
+</NumericalEpsilonMethod>
+<NumericalEpsilon>
+1e-06
+</NumericalEpsilon>
+<Display>
+1
+</Display>
+<DisplayRangeOutWarning>
+0
+</DisplayRangeOutWarning>

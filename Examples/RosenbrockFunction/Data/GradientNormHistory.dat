@@ -1,0 +1,79 @@
+% Flood Neural Network. Multilayer Perceptron Object.
+NumberOfInputs:
+0
+NumberOfHiddenLayers:
+0
+NumbersOfHiddenNeurons:
+
+NumberOfOutputs:
+0
+HiddenLayersActivationFunction:
+
+OutputLayerActivationFunction:
+Linear
+NameOfInputVariables:
+
+NameOfOutputVariables:
+
+UnitsOfInputVariables:
+
+UnitsOfOutputVariables:
+
+DescriptionOfInputVariables:
+
+DescriptionOfOutputVariables:
+
+MeanOfInputVariables:
+
+StandardDeviationOfInputVariables:
+
+MeanOfOutputVariables:
+
+StandardDeviationOfOutputVariables:
+
+MinimumOfInputVariables:
+
+MaximumOfInputVariables:
+
+MinimumOfOutputVariables:
+
+MaximumOfOutputVariables:
+
+LowerBoundOfOutputVariables:
+
+UpperBoundOfOutputVariables:
+
+NeuralParameters:
+
+NumberOfIndependentParameters:
+5
+NameOfIndependentParameters:
+x1 x2 x3 x4 x5 
+UnitsOfIndependentParameters:
+None None None None None 
+DescriptionOfIndependentParameters:
+None None None None None 
+MeanOfIndependentParameters:
+0 0 0 0 0 
+StandardDeviationOfIndependentParameters:
+1 1 1 1 1 
+MinimumOfIndependentParameters:
+-2.048 -2.048 -2.048 -2.048 -2.048 
+MaximumOfIndependentParameters:
+2.048 2.048 2.048 2.048 2.048 
+LowerBoundOfIndependentParameters:
+-1e+99 -1e+99 -1e+99 -1e+99 -1e+99 
+UpperBoundOfIndependentParameters:
+1e+99 1e+99 1e+99 1e+99 1e+99 
+IndependentParameters:
+1.0143 1.0289 1.05871 1.12123 1.25765 
+PreAndPostProcessingMethod:
+MinimumAndMaximum
+NumericalDifferentiationMethod:
+CentralDifferences
+DisplayOutOfRangeWarning:
+0
+Display:
+1
+NumericalEpsilon:
+1e-06

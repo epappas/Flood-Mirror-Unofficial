@@ -1,0 +1,7 @@
+<Flood version='3.0' class='GradientDescent' content='TrainingHistory'>
+<EvaluationHistory>
+2 5.39975e-024 
+</EvaluationHistory>
+<GradientNormHistory>
+2.82843 4.64747e-012 
+</GradientNormHistory>

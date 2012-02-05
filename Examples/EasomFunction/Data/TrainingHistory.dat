@@ -1,0 +1,43 @@
+<Flood version='3.0' class='QuasiNewtonMethod' content='TrainingHistory'>
+<ParametersHistory>
+0.01 0.01 
+0.0309466 0.0309466 
+0.0312222 0.0312222 
+0.03138 0.03138 
+0.0314404 0.0314404 
+0.0314173 0.0314173 
+</ParametersHistory>
+<ParametersNormHistory>
+0.0141421 0.0437651 0.0441548 0.0443781 0.0444634 0.0444308 
+</ParametersNormHistory>
+<EvaluationHistory>
+-3.03082e-005 -0.993413 -0.998874 -0.999961 -0.999982 -1 
+</EvaluationHistory>
+<GradientHistory>
+-8.26135e-005 -8.26135e-005 
+-0.139905 -0.139905 
+-0.0580659 -0.0580659 
+-0.0107631 -0.0107631 
+0.0073284 0.0073284 
+0.000417996 0.000417996 
+</GradientHistory>
+<GradientNormHistory>
+0.000116833 0.197856 0.0821176 0.0152213 0.0103639 0.000591135 
+</GradientNormHistory>
+<TrainingDirectionHistory>
+0.707107 0.707107 
+0.707107 0.707107 
+0.707107 0.707107 
+0.707107 0.707107 
+-0.707107 -0.707107 
+-0.707107 -0.707107 
+</TrainingDirectionHistory>
+<TrainingDirectionNormHistory>
+1 1 1 1 1 1 
+</TrainingDirectionNormHistory>
+<TrainingRateHistory>
+0.029623 0.000389708 0.000223283 8.52865e-005 3.25766e-005 0 
+</TrainingRateHistory>
+<ElapsedTimeHistory>
+0 0 0 0 0 0 
+</ElapsedTimeHistory>

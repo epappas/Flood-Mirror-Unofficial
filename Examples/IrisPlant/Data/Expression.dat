@@ -1,0 +1,19 @@
+<Flood version='3.0' class='MultilayerPerceptron' content='Expression'>
+<InputsScaling>
+scaled_x1=(x1-5.84333)/0.828066;
+scaled_x2=(x2-3.05733)/0.435866;
+scaled_x3=(x3-3.758)/1.7653;
+scaled_x4=(x4-1.19933)/0.762238;
+</InputsScaling>
+<ForwardPropagation>
+y11=tanh(46.8975+15.1203*scaled_x1+1.55374*scaled_x2-65.9486*scaled_x3-19.8352*scaled_x4);
+y12=tanh(-7.24157+5.80392*scaled_x1+0.774859*scaled_x2-8.35823*scaled_x3-7.30369*scaled_x4);
+y13=tanh(-3.40061-3.98871*scaled_x1+11.5884*scaled_x2-2.99619*scaled_x3-4.055*scaled_x4);
+y14=tanh(-12.5783-20.368*scaled_x1+19.5418*scaled_x2-13.1844*scaled_x3+3.63494*scaled_x4);
+y15=tanh(5.57184+19.0457*scaled_x1-32.1488*scaled_x2+45.8482*scaled_x3-28.0578*scaled_x4);
+scaled_y1=(0.500048-1.25288e-05*y11+0.417906*y12-0.0314635*y13+0.11508*y14+0.00148659*y15);
+scaled_y2=(0.0132737+0.48677*y11-1.14557*y12-1.69906*y13-4.75633*y14-7.10072*y15);
+scaled_y3=(0.486693-0.486826*y11+0.0646081*y12+1.53226*y13+5.50576*y14+7.10248*y15);
+</ForwardPropagation>
+<OutputsUnscaling>
+</OutputsUnscaling>

@@ -1,0 +1,8 @@
+Pima Indians Diabetes Database
+
+From National Institute of Diabetes and Digestive and Kidney Diseases 
+Binary classes (tested positive or negative for diabetes) 
+All 8 attributes are numeric-valued 
+768 instances 
+Includes cost data (donated by Peter Turney) 
+Ftp Access 

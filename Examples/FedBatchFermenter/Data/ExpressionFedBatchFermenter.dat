@@ -1,0 +1,12 @@
+<Flood version='3.0' class='MultilayerPerceptron' content='Expression'>
+<InputsScaling>
+scaled_time=2*(time-0)/(54-0)-1;
+</InputsScaling>
+<ForwardPropagation>
+y11=tanh(0.0358344+0.122126*scaled_time);
+y12=tanh(-0.481821+2.37709*scaled_time);
+scaled_feed_rate=(-0.360645+1.2512*y11+0.487719*y12);
+</ForwardPropagation>
+<OutputsUnscaling>
+feed_rate=0.5*(feed_rate+1.0)*(12-0)+0;
+</OutputsUnscaling>

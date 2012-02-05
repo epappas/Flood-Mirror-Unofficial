@@ -1,0 +1,57 @@
+<Flood version='3.0' class='InputTargetDataSet'>
+<InstancesNumber>
+4
+</InstancesNumber>
+<VariablesNumber>
+8
+</VariablesNumber>
+<TrainingInstancesNumber>
+4
+</TrainingInstancesNumber>
+<TrainingInstancesIndices>
+0 1 2 3
+</TrainingInstancesIndices>
+<InputVariablesNumber>
+2
+</InputVariablesNumber>
+<InputVariablesIndices>
+0 1
+</InputVariablesIndices>
+<TargetVariablesNumber>
+6
+</TargetVariablesNumber>
+<TargetVariablesIndices>
+2 3 4 5 6 7
+</TargetVariablesIndices>
+<VariablesName>
+<Name>
+X 
+</Name>
+<Name>
+Y 
+</Name>
+<Name>
+AND 
+</Name>
+<Name>
+OR 
+</Name>
+<Name>
+NAND 
+</Name>
+<Name>
+NOR 
+</Name>
+<Name>
+XOR 
+</Name>
+<Name>
+XNOR
+</Name>
+</VariablesName>
+<Data>
+1 1 1 1 0 0 0 1
+1 0 0 1 1 0 1 0
+0 1 0 1 1 0 1 0
+0 0 0 0 1 1 0 1
+</Data>

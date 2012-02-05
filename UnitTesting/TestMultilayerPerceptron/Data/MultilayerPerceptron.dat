@@ -1,0 +1,82 @@
+<Flood version='3.0' class='MultilayerPerceptron'>
+<InputsNumber>
+0
+</InputsNumber>
+<HiddenLayersNumber>
+0
+</HiddenLayersNumber>
+<HiddenLayersSize>
+
+</HiddenLayersSize>
+<OutputsNumber>
+0
+</OutputsNumber>
+<IndependentParametersNumber>
+3
+</IndependentParametersNumber>
+<IndependentParametersName>
+<Name>
+Independent parameter 1
+</Name>
+<Name>
+
+</Name>
+<Name>
+
+</Name>
+</IndependentParametersName>
+<IndependentParametersUnits>
+<Units>
+
+</Units>
+<Units>
+[kg]
+</Units>
+<Units>
+
+</Units>
+</IndependentParametersUnits>
+<IndependentParametersDescription>
+<Description>
+
+</Description>
+<Description>
+
+</Description>
+<Description>
+Description of independent parameter 3
+</Description>
+</IndependentParametersDescription>
+<IndependentParametersMean>
+2 0 0 
+</IndependentParametersMean>
+<IndependentParametersStandardDeviation>
+1 0.5 1 
+</IndependentParametersStandardDeviation>
+<IndependentParametersMinimum>
+-2 -1 -1 
+</IndependentParametersMinimum>
+<IndependentParametersMaximum>
+1 -0.5 1 
+</IndependentParametersMaximum>
+<IndependentParametersScalingMethod>
+None
+</IndependentParametersScalingMethod>
+<IndependentParameters>
+-0.449349 -0.0126177 1.29338 
+</IndependentParameters>
+<NumericalDifferentiationMethod>
+CentralDifferences
+</NumericalDifferentiationMethod>
+<NumericalEpsilonMethod>
+Relative
+</NumericalEpsilonMethod>
+<NumericalEpsilon>
+1e-06
+</NumericalEpsilon>
+<Display>
+1
+</Display>
+<DisplayRangeOutWarning>
+0
+</DisplayRangeOutWarning>

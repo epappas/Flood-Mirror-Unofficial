@@ -1,0 +1,24 @@
+<Flood version='3.0' class='MultilayerPerceptron' content='Expression'>
+<InputsScaling>
+scaled_LCB =(LCB --2.38182)/1.51322;
+scaled_Cp =(Cp -0.564136)/0.02329;
+scaled_LWL/DIS^(1/3) =(LWL/DIS^(1/3) -4.78864)/0.253057;
+scaled_BWL/Tc =(BWL/Tc -3.93682)/0.548193;
+scaled_LWL/BWL =(LWL/BWL -3.20682)/0.247998;
+scaled_Fn (Rr*1000)/(g*mh)=(Fn (Rr*1000)/(g*mh)-0.2875)/0.100942;
+</InputsScaling>
+<ForwardPropagation>
+y11=tanh(0.489528+3.64055*scaled_LCB +1.0996*scaled_Cp -1.56447*scaled_LWL/DIS^(1/3) -3.84093*scaled_BWL/Tc +4.35547*scaled_LWL/BWL -0.276612*scaled_Fn (Rr*1000)/(g*mh));
+y12=tanh(2.35868-0.0203504*scaled_LCB +0.0328732*scaled_Cp -0.0947149*scaled_LWL/DIS^(1/3) +0.121662*scaled_BWL/Tc +0.0974665*scaled_LWL/BWL -1.3819*scaled_Fn (Rr*1000)/(g*mh));
+y13=tanh(1.36921-0.158903*scaled_LCB -0.181459*scaled_Cp -1.22116*scaled_LWL/DIS^(1/3) -0.16693*scaled_BWL/Tc +0.314389*scaled_LWL/BWL -1.26207*scaled_Fn (Rr*1000)/(g*mh));
+y14=tanh(-3.67698-1.19018*scaled_LCB +3.77966*scaled_Cp -8.08109*scaled_LWL/DIS^(1/3) +0.549194*scaled_BWL/Tc -3.58049*scaled_LWL/BWL -3.08125*scaled_Fn (Rr*1000)/(g*mh));
+y15=tanh(2.9786+1.61796*scaled_LCB -2.43741*scaled_Cp +5.81307*scaled_LWL/DIS^(1/3) +6.15323*scaled_BWL/Tc -3.46245*scaled_LWL/BWL -0.797585*scaled_Fn (Rr*1000)/(g*mh));
+y16=tanh(0.461563-0.200256*scaled_LCB -0.00321435*scaled_Cp -0.0198148*scaled_LWL/DIS^(1/3) +0.0100339*scaled_BWL/Tc +0.0535606*scaled_LWL/BWL -0.0181333*scaled_Fn (Rr*1000)/(g*mh));
+y17=tanh(0.242653-2.50256*scaled_LCB +0.750501*scaled_Cp +2.31879*scaled_LWL/DIS^(1/3) -2.89786*scaled_BWL/Tc -0.691954*scaled_LWL/BWL -0.282501*scaled_Fn (Rr*1000)/(g*mh));
+y18=tanh(3.5958+1.15906*scaled_LCB -3.68512*scaled_Cp +7.91219*scaled_LWL/DIS^(1/3) -0.578886*scaled_BWL/Tc +3.42318*scaled_LWL/BWL +3.02861*scaled_Fn (Rr*1000)/(g*mh));
+y19=tanh(-0.882234-0.263938*scaled_LCB +3.73699*scaled_Cp +4.73015*scaled_LWL/DIS^(1/3) +3.93981*scaled_BWL/Tc +1.41802*scaled_LWL/BWL -2.23346*scaled_Fn (Rr*1000)/(g*mh));
+scaled_(Rr*1000)/(g*mh)=(5.10135-0.558536*y11-3.55092*y12-0.0785563*y13+5.04192*y14-0.113967*y15-4.86731*y16+0.707582*y17+5.11906*y18+0.0641894*y19);
+</ForwardPropagation>
+<OutputsUnscaling>
+(Rr*1000)/(g*mh)=10.4954+15.1605*scaled_(Rr*1000)/(g*mh);
+</OutputsUnscaling>

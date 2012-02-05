@@ -1,0 +1,25 @@
+<Flood version='3.0' class='FunctionRegressionUtilities' content='Expression'>
+<Expression>
+<InputsScaling>
+scaled_frequency =(frequency -2886.38)/3152.57;
+scaled_angle_of_attack =(angle_of_attack -6.7823)/5.91813;
+scaled_Chord length =(Chord length -0.136548)/0.0935407;
+scaled_suction_side_displacement_thickness =(suction_side_displacement_thickness -50.8607)/15.5728;
+scaled_freestream_speed =(freestream_speed -0.0111399)/0.0131502;
+</InputsScaling>
+<ForwardPropagation>
+y11=tanh(-0.641106-2.45056*scaled_frequency +0.753522*scaled_angle_of_attack -0.21492*scaled_Chord length +0.157918*scaled_suction_side_displacement_thickness +0.259999*scaled_freestream_speed );
+y12=tanh(-0.653722-2.31783*scaled_frequency +0.741998*scaled_angle_of_attack -0.226131*scaled_Chord length +0.156277*scaled_suction_side_displacement_thickness +0.245148*scaled_freestream_speed );
+y13=tanh(-3.24116+0.774515*scaled_frequency +0.454404*scaled_angle_of_attack +0.950589*scaled_Chord length -0.426354*scaled_suction_side_displacement_thickness +0.839253*scaled_freestream_speed );
+y14=tanh(3.77677+4.20273*scaled_frequency -0.505728*scaled_angle_of_attack +0.357821*scaled_Chord length -0.112545*scaled_suction_side_displacement_thickness +1.56145*scaled_freestream_speed );
+y15=tanh(-0.196091-0.858368*scaled_frequency -0.402463*scaled_angle_of_attack +0.0388197*scaled_Chord length +0.202561*scaled_suction_side_displacement_thickness -1.55268*scaled_freestream_speed );
+y16=tanh(46.4619-6.39513*scaled_frequency +11.286*scaled_angle_of_attack +81.3256*scaled_Chord length -0.347334*scaled_suction_side_displacement_thickness -77.3063*scaled_freestream_speed );
+y17=tanh(3.69872+5.19979*scaled_frequency -1.46314*scaled_angle_of_attack -0.432555*scaled_Chord length -0.00848673*scaled_suction_side_displacement_thickness +2.73776*scaled_freestream_speed );
+y18=tanh(7.3145+45.0543*scaled_frequency +5.16183*scaled_angle_of_attack -32.2651*scaled_Chord length -1.56155*scaled_suction_side_displacement_thickness +3.73446*scaled_freestream_speed );
+y19=tanh(0.631182-0.0564629*scaled_frequency +0.558117*scaled_angle_of_attack +0.795922*scaled_Chord length -0.047221*scaled_suction_side_displacement_thickness -0.104157*scaled_freestream_speed );
+scaled_sound_pressure_level=(-12.989-31.2714*y11+33.1859*y12-12.1469*y13+5.40944*y14+1.87704*y15-0.560994*y16-2.26214*y17-0.661791*y18-2.73601*y19);
+</ForwardPropagation>
+<OutputsUnscaling>
+sound_pressure_level=124.836+6.89866*scaled_sound_pressure_level;
+</OutputsUnscaling>
+</Expression>

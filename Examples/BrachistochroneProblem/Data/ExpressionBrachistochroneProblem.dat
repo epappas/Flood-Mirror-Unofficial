@@ -1,0 +1,11 @@
+<Flood version='3.0' class='MultilayerPerceptron' content='Expression'>
+<InputsScaling>
+</InputsScaling>
+<ForwardPropagation>
+y11=tanh(-1.12834-24.165*scaled_x);
+y12=tanh(-0.273606-3.09457*scaled_x);
+y13=tanh(-6.27684+3.79317*scaled_x);
+scaled_y=(15.8856+27.2958*y11+2.52068*y12-14.6855*y13);
+</ForwardPropagation>
+<OutputsUnscaling>
+</OutputsUnscaling>

@@ -1,0 +1,98 @@
+<Flood version='3.0' class='MultilayerPerceptron'>
+<InputsNumber>
+2
+</InputsNumber>
+<HiddenLayersNumber>
+1
+</HiddenLayersNumber>
+<HiddenLayersSize>
+6 
+</HiddenLayersSize>
+<OutputsNumber>
+6
+</OutputsNumber>
+<IndependentParametersNumber>
+0
+</IndependentParametersNumber>
+<HiddenLayersActivationFunction>
+HyperbolicTangent
+</HiddenLayersActivationFunction>
+<OutputLayerActivationFunction>
+Linear
+</OutputLayerActivationFunction>
+<InputsScalingMethod>
+MinimumMaximum
+</InputsScalingMethod>
+<OutputsUnscalingMethod>
+MinimumMaximum
+</OutputsUnscalingMethod>
+<NeuralParameters>
+-1.77422 1.69335 -1.48712 -0.500022 0.975569 -0.18821 1.09094 -1.27953 -0.626716 -1.66249 1.47101 -1.01834 0.964701 -0.122151 0.11474 1.35059 0.883462 1.47281 -0.608901 0.783861 -0.8985 -2.00404 -0.578783 1.21038 -0.152759 -0.2559 1.03953 -0.65743 -0.50219 -0.424026 0.819838 1.09237 -0.263593 1.47278 -0.642045 0.706786 -0.745417 0.907567 -0.0294678 0.0687445 -0.296927 0.470193 0.311511 -0.266072 -0.497448 -1.11726 -0.546045 0.710705 -0.827304 0.718388 0.408349 0.121969 1.16446 0.71522 -0.00253535 0.560419 -0.937765 -1.0562 -0.297036 -1.16927 
+</NeuralParameters>
+<InputVariablesName>
+<Name>
+X 
+</Name>
+<Name>
+Y 
+</Name>
+</InputVariablesName>
+<OutputVariablesName>
+<Name>
+AND 
+</Name>
+<Name>
+OR 
+</Name>
+<Name>
+NAND 
+</Name>
+<Name>
+NOR 
+</Name>
+<Name>
+XOR 
+</Name>
+<Name>
+XNOR
+</Name>
+</OutputVariablesName>
+<InputVariablesMean>
+0.5 0.5 
+</InputVariablesMean>
+<InputVariablesStandardDeviation>
+0.57735 0.57735 
+</InputVariablesStandardDeviation>
+<OutputVariablesMean>
+0.25 0.75 0.75 0.25 0.5 0.5 
+</OutputVariablesMean>
+<OutputVariablesStandardDeviation>
+0.5 0.5 0.5 0.5 0.57735 0.57735 
+</OutputVariablesStandardDeviation>
+<InputVariablesMinimum>
+0 0 
+</InputVariablesMinimum>
+<InputVariablesMaximum>
+1 1 
+</InputVariablesMaximum>
+<OutputVariablesMinimum>
+0 0 0 0 0 0 
+</OutputVariablesMinimum>
+<OutputVariablesMaximum>
+1 1 1 1 1 1 
+</OutputVariablesMaximum>
+<NumericalDifferentiationMethod>
+CentralDifferences
+</NumericalDifferentiationMethod>
+<NumericalEpsilonMethod>
+Relative
+</NumericalEpsilonMethod>
+<NumericalEpsilon>
+1e-06
+</NumericalEpsilon>
+<Display>
+1
+</Display>
+<DisplayRangeOutWarning>
+0
+</DisplayRangeOutWarning>

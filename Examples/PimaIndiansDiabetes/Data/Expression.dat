@@ -1,0 +1,22 @@
+<Flood version='3.0' class='MultilayerPerceptron' content='Expression'>
+<InputsScaling>
+scaled_x1=(x1-3.84505)/3.36958;
+scaled_x2=(x2-120.895)/31.9726;
+scaled_x3=(x3-69.1055)/19.3558;
+scaled_x4=(x4-20.5365)/15.9522;
+scaled_x5=(x5-79.7995)/115.244;
+scaled_x6=(x6-31.9926)/7.88416;
+scaled_x7=(x7-0.471876)/0.331329;
+scaled_x8=(x8-33.2409)/11.7602;
+</InputsScaling>
+<ForwardPropagation>
+y11=tanh(-25.8537+6.83354*scaled_x1-38.6521*scaled_x2-37.142*scaled_x3+6.80536*scaled_x4+0.74134*scaled_x5-60.0599*scaled_x6-2.57776*scaled_x7-3.05126*scaled_x8);
+y12=tanh(16.5007+28.0561*scaled_x1-2.8147*scaled_x2+6.55241*scaled_x3-1.60839*scaled_x4-17.5735*scaled_x5+34.3726*scaled_x6-16.9989*scaled_x7-22.246*scaled_x8);
+y13=tanh(-1.62785-9.73268*scaled_x1-18.8564*scaled_x2-4.74305*scaled_x3-17.2539*scaled_x4+13.672*scaled_x5+20.4699*scaled_x6+22.2838*scaled_x7-48.116*scaled_x8);
+y14=tanh(-28.8736-16.7825*scaled_x1-48.8807*scaled_x2-10.0041*scaled_x3-15.9395*scaled_x4-44.0672*scaled_x5-37.8462*scaled_x6-7.39048*scaled_x7-8.38748*scaled_x8);
+y15=tanh(-22.6558+33.6672*scaled_x1+45.7375*scaled_x2-11.6425*scaled_x3+21.0829*scaled_x4-46.2805*scaled_x5+13.8683*scaled_x6+18.5329*scaled_x7-26.7237*scaled_x8);
+y16=tanh(6.60961+1.21811*scaled_x1-18.7312*scaled_x2+5.81314*scaled_x3+27.9188*scaled_x4-32.6719*scaled_x5-33.7437*scaled_x6-17.0171*scaled_x7+7.46161*scaled_x8);
+scaled_y1=logistic(-0.447867-13.5932*y11-12.8654*y12-13.0111*y13+12.6966*y14+13.5815*y15-13.1622*y16);
+</ForwardPropagation>
+<OutputsUnscaling>
+</OutputsUnscaling>

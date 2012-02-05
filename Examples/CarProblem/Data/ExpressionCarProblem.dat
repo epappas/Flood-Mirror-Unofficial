@@ -1,0 +1,12 @@
+<Flood version='3.0' class='MultilayerPerceptron' content='Expression'>
+<InputsScaling>
+</InputsScaling>
+<ForwardPropagation>
+y11=tanh(-1.81853+2.05111*scaled_time);
+y12=tanh(-0.232649+0.675795*scaled_time);
+y13=tanh(-1.06896+1.08547*scaled_time);
+scaled_throttle_acceleration=(0.933295-1.62249*y11-0.188377*y12-0.449856*y13);
+scaled_bracking_deceleration=(0.457599-0.789867*y11-1.79091*y12-1.17398*y13);
+</ForwardPropagation>
+<OutputsUnscaling>
+</OutputsUnscaling>

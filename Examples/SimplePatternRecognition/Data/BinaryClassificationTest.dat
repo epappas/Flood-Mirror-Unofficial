@@ -1,0 +1,19 @@
+<Flood version='3.0' class='PatternRecognitionUtilities' content='BinaryClassificationTest'>
+<ClassificationAccuracy>
+0.92
+</ClassificationAccuracy>
+<ErrorRate>
+0.08
+</ErrorRate>
+<Sensitivity>
+0.9
+</Sensitivity>
+<Specifity>
+0.933333
+</Specifity>
+<PositiveLikelihood>
+13.5
+</PositiveLikelihood>
+<NegativeLikelihood>
+9.33333
+</NegativeLikelihood>

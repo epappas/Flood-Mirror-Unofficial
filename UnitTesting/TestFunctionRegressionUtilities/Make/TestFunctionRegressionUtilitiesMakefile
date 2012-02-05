@@ -1,0 +1,77 @@
+##################################################################################################################
+#                                                                                                                #
+#   T E S T   F U N C T I O N   R E G R E S S I O N   U T I L I T I E S   M A K E F I L E                        #
+#                                                                                                                #
+#   Roberto Lopez                                                                                                # 
+#   International Center for Numerical Methods in Engineering (CIMNE)                                            #
+#   Technical University of Catalonia (UPC)                                                                      #
+#   Barcelona, Spain                                                                                             #
+#   E-mail: rlopez@cimne.upc.edu                                                                                 #
+#                                                                                                                #
+##################################################################################################################
+
+objects = TestFunctionRegressionUtilitiesApplication.o \
+          TestFunctionRegressionUtilities.o \
+          InputTargetDataSet.o \
+          UnitTesting.o \
+          FunctionRegressionUtilities.o \
+          Perceptron.o \
+          MultilayerPerceptron.o 
+
+
+Flood: $(objects)
+	g++ $(objects) -o Flood 
+
+
+# Main function
+
+TestFunctionRegressionUtilitiesApplication.o: ../TestFunctionRegressionUtilitiesApplication.cpp
+	g++ -c ../TestFunctionRegressionUtilitiesApplication.cpp -o TestFunctionRegressionUtilitiesApplication.o
+
+# Test function regression utilities
+
+TestFunctionRegressionUtilities.o: ../TestFunctionRegressionUtilities.cpp
+	g++ -c ../TestFunctionRegressionUtilities.cpp -o TestFunctionRegressionUtilities.o
+
+# Utilities
+
+InputTargetDataSet.o: ../../../Flood/Utilities/InputTargetDataSet.cpp
+	g++ -c ../../../Flood/Utilities/InputTargetDataSet.cpp -o InputTargetDataSet.o
+
+UnitTesting.o: ../../../Flood/Utilities/UnitTesting.cpp
+	g++ -c ../../../Flood/Utilities/UnitTesting.cpp -o UnitTesting.o
+
+FunctionRegressionUtilities.o: ../../../Flood/Utilities/FunctionRegressionUtilities.cpp
+	g++ -c ../../../Flood/Utilities/FunctionRegressionUtilities.cpp -o FunctionRegressionUtilities.o
+
+# Perceptron
+
+Perceptron.o: ../../../Flood/Perceptron/Perceptron.cpp
+	g++ -c ../../../Flood/Perceptron/Perceptron.cpp -o Perceptron.o
+
+# Multilayer perceptron
+
+MultilayerPerceptron.o: ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp
+	g++ -c ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp -o MultilayerPerceptron.o
+
+clean:
+	rm $(objects) Flood
+
+
+# Flood: An Open Source Neural Networks C++ Library.
+# Copyright (C) 2005-2010 Roberto Lopez 
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+

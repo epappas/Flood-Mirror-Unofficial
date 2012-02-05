@@ -1,0 +1,79 @@
+##################################################################################################################
+#                                                                                                                #
+#   T E S T   O B J E C T I V E   F U N C T I O N A L   M A K E F I L E                                          #
+#                                                                                                                #
+#   Roberto Lopez                                                                                                # 
+#   International Center for Numerical Methods in Engineering (CIMNE)                                            #
+#   Technical University of Catalonia (UPC)                                                                      #
+#   Barcelona, Spain                                                                                             #
+#   E-mail: rlopez@cimne.upc.edu                                                                                 #
+#                                                                                                                #
+##################################################################################################################
+
+objects = TestObjectiveFunctionalApplication.o \
+          MockObjectiveFunctional.o \
+          TestObjectiveFunctional.o \
+          UnitTesting.o \
+          Perceptron.o \
+          MultilayerPerceptron.o \
+          ObjectiveFunctional.o 
+
+Flood: $(objects)
+	g++ $(objects) -o Flood 
+
+# Main function
+
+TestObjectiveFunctionalApplication.o: ../TestObjectiveFunctionalApplication.cpp
+	g++ -c ../TestObjectiveFunctionalApplication.cpp -o TestObjectiveFunctionalApplication.o
+
+# Mock objective functional
+
+MockObjectiveFunctional.o: ../MockObjectiveFunctional.cpp
+	g++ -c ../MockObjectiveFunctional.cpp -o MockObjectiveFunctional.o
+
+# Test objective functional
+
+TestObjectiveFunctional.o: ../TestObjectiveFunctional.cpp
+	g++ -c ../TestObjectiveFunctional.cpp -o TestObjectiveFunctional.o
+
+# Utilities
+
+UnitTesting.o: ../../../Flood/Utilities/UnitTesting.cpp
+	g++ -c ../../../Flood/Utilities/UnitTesting.cpp -o UnitTesting.o
+
+# Perceptron
+
+Perceptron.o: ../../../Flood/Perceptron/Perceptron.cpp
+	g++ -c ../../../Flood/Perceptron/Perceptron.cpp -o Perceptron.o
+
+# Multilayer perceptron
+
+MultilayerPerceptron.o: ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp
+	g++ -c ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp -o MultilayerPerceptron.o
+
+# Objective functional
+
+ObjectiveFunctional.o: ../../../Flood/ObjectiveFunctional/ObjectiveFunctional.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/ObjectiveFunctional.cpp -o ObjectiveFunctional.o
+
+clean:
+	rm $(objects) Flood
+
+
+# Flood: An Open Source Neural Networks C++ Library.
+# Copyright (C) 2005-2009 Roberto Lopez 
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+

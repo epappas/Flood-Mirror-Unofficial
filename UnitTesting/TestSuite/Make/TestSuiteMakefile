@@ -1,0 +1,279 @@
+##################################################################################################################
+#                                                                                                                #
+#   T E S T   S U I T E   M A K E F I L E                                                                        #
+#                                                                                                                #
+#   Roberto Lopez                                                                                                # 
+#   International Center for Numerical Methods in Engineering (CIMNE)                                            #
+#   Technical University of Catalonia (UPC)                                                                      #
+#   Barcelona, Spain                                                                                             #
+#   E-mail: rlopez@cimne.upc.edu                                                                                 #
+#                                                                                                                #
+##################################################################################################################
+
+objects = TestSuiteApplication.o \
+          InputTargetDataSet.o \
+          FunctionRegressionUtilities.o \
+          PatternRecognitionUtilities.o \
+          IntegrationOfFunctions.o \
+          OrdinaryDifferentialEquations.o \
+          UnitTesting.o \
+          Perceptron.o \
+          MultilayerPerceptron.o \
+          ObjectiveFunctional.o \
+          SumSquaredError.o \
+          MeanSquaredError.o \
+          RootMeanSquaredError.o \
+          NormalizedSquaredError.o \
+          MinkowskiError.o \
+          TrainingAlgorithm.o \
+          RandomSearch.o \
+          GradientDescent.o \
+          ConjugateGradient.o \
+          QuasiNewtonMethod.o \
+          EvolutionaryAlgorithm.o \
+          TestVector.o \
+          TestMatrix.o \
+          TestInputTargetDataSet.o \
+          TestIntegrationOfFunctions.o \
+          TestFunctionRegressionUtilities.o \
+          TestPatternRecognitionUtilities.o \
+          TestOrdinaryDifferentialEquations.o \
+          TestPerceptron.o \
+          TestMultilayerPerceptron.o \
+          MockMultilayerPerceptron.o \
+          TestObjectiveFunctional.o \
+          MockObjectiveFunctional.o \
+          Polynomial.o \
+          TestSumSquaredError.o \
+          TestMeanSquaredError.o \
+          TestRootMeanSquaredError.o \
+          TestNormalizedSquaredError.o \
+          TestMinkowskiError.o \
+          TestTrainingAlgorithm.o \
+          MockTrainingAlgorithm.o \
+          TestRandomSearch.o \
+          TestGradientDescent.o \
+          TestConjugateGradient.o \
+          TestQuasiNewtonMethod.o \
+          TestEvolutionaryAlgorithm.o 
+
+
+Flood: $(objects)
+	g++ $(objects) -o Flood 
+
+# Main function
+
+TestSuiteApplication.o: ../TestSuiteApplication.cpp
+	g++ -c ../TestSuiteApplication.cpp -o TestSuiteApplication.o
+
+# Utilities
+
+FunctionRegressionUtilities.o: ../../../Flood/Utilities/FunctionRegressionUtilities.cpp
+	g++ -c ../../../Flood/Utilities/FunctionRegressionUtilities.cpp -o FunctionRegressionUtilities.o
+
+InputTargetDataSet.o: ../../../Flood/Utilities/InputTargetDataSet.cpp
+	g++ -c ../../../Flood/Utilities/InputTargetDataSet.cpp -o InputTargetDataSet.o
+
+IntegrationOfFunctions.o: ../../../Flood/Utilities/IntegrationOfFunctions.cpp
+	g++ -c ../../../Flood/Utilities/IntegrationOfFunctions.cpp -o IntegrationOfFunctions.o
+
+Matrix.o: ../../../Flood/Utilities/Matrix.cpp
+	g++ -c ../../../Flood/Utilities/Matrix.cpp -o Matrix.o
+
+UnitTesting.o: ../../../Flood/Utilities/UnitTesting.cpp
+	g++ -c ../../../Flood/Utilities/UnitTesting.cpp -o UnitTesting.o
+
+OrdinaryDifferentialEquations.o: ../../../Flood/Utilities/OrdinaryDifferentialEquations.cpp
+	g++ -c ../../../Flood/Utilities/OrdinaryDifferentialEquations.cpp -o OrdinaryDifferentialEquations.o
+
+PatternRecognitionUtilities.o: ../../../Flood/Utilities/PatternRecognitionUtilities.cpp
+	g++ -c ../../../Flood/Utilities/PatternRecognitionUtilities.cpp -o PatternRecognitionUtilities.o
+
+# Perceptron
+
+Perceptron.o: ../../../Flood/Perceptron/Perceptron.cpp
+	g++ -c ../../../Flood/Perceptron/Perceptron.cpp -o Perceptron.o
+
+# Multilayer perceptron
+
+MultilayerPerceptron.o: ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp
+	g++ -c ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp -o MultilayerPerceptron.o
+
+# Objective functional
+
+ObjectiveFunctional.o: ../../../Flood/ObjectiveFunctional/ObjectiveFunctional.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/ObjectiveFunctional.cpp -o ObjectiveFunctional.o
+
+SumSquaredError.o: ../../../Flood/ObjectiveFunctional/SumSquaredError.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/SumSquaredError.cpp -o SumSquaredError.o
+
+MeanSquaredError.o: ../../../Flood/ObjectiveFunctional/MeanSquaredError.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/MeanSquaredError.cpp -o MeanSquaredError.o
+
+RootMeanSquaredError.o: ../../../Flood/ObjectiveFunctional/RootMeanSquaredError.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/RootMeanSquaredError.cpp -o RootMeanSquaredError.o
+
+NormalizedSquaredError.o: ../../../Flood/ObjectiveFunctional/NormalizedSquaredError.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/NormalizedSquaredError.cpp -o NormalizedSquaredError.o
+
+MinkowskiError.o: ../../../Flood/ObjectiveFunctional/MinkowskiError.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/MinkowskiError.cpp -o MinkowskiError.o
+
+# Training algorithm
+
+TrainingAlgorithm.o: ../../../Flood/TrainingAlgorithm/TrainingAlgorithm.cpp
+	g++ -c ../../../Flood/TrainingAlgorithm/TrainingAlgorithm.cpp -o TrainingAlgorithm.o
+
+RandomSearch.o: ../../../Flood/TrainingAlgorithm/RandomSearch.cpp
+	g++ -c ../../../Flood/TrainingAlgorithm/RandomSearch.cpp -o RandomSearch.o
+
+GradientDescent.o: ../../../Flood/TrainingAlgorithm/GradientDescent.cpp
+	g++ -c ../../../Flood/TrainingAlgorithm/GradientDescent.cpp -o GradientDescent.o
+
+ConjugateGradient.o: ../../../Flood/TrainingAlgorithm/ConjugateGradient.cpp
+	g++ -c ../../../Flood/TrainingAlgorithm/ConjugateGradient.cpp -o ConjugateGradient.o
+
+QuasiNewtonMethod.o: ../../../Flood/TrainingAlgorithm/QuasiNewtonMethod.cpp
+	g++ -c ../../../Flood/TrainingAlgorithm/QuasiNewtonMethod.cpp -o QuasiNewtonMethod.o
+
+EvolutionaryAlgorithm.o: ../../../Flood/TrainingAlgorithm/EvolutionaryAlgorithm.cpp
+	g++ -c ../../../Flood/TrainingAlgorithm/EvolutionaryAlgorithm.cpp -o EvolutionaryAlgorithm.o
+
+# Test vector
+
+TestVector.o: ../../TestVector/TestVector.cpp
+	g++ -c ../../TestVector/TestVector.cpp -o TestVector.o
+
+# Test matrix
+
+TestMatrix.o: ../../TestMatrix/TestMatrix.cpp
+	g++ -c ../../TestMatrix/TestMatrix.cpp -o TestMatrix.o
+
+# Test input-target data set
+
+TestInputTargetDataSet.o: ../../TestInputTargetDataSet/TestInputTargetDataSet.cpp
+	g++ -c ../../TestInputTargetDataSet/TestInputTargetDataSet.cpp -o TestInputTargetDataSet.o
+
+# Test integration of functions
+
+TestIntegrationOfFunctions.o: ../../TestIntegrationOfFunctions/TestIntegrationOfFunctions.cpp
+	g++ -c ../../TestIntegrationOfFunctions/TestIntegrationOfFunctions.cpp -o TestIntegrationOfFunctions.o
+
+# Test ordinary differential equations
+
+TestOrdinaryDifferentialEquations.o: ../../TestOrdinaryDifferentialEquations/TestOrdinaryDifferentialEquations.cpp
+	g++ -c ../../TestOrdinaryDifferentialEquations/TestOrdinaryDifferentialEquations.cpp -o TestOrdinaryDifferentialEquations.o
+
+# Test function regression utilities
+
+TestFunctionRegressionUtilities.o: ../../TestFunctionRegressionUtilities/TestFunctionRegressionUtilities.cpp
+	g++ -c ../../TestFunctionRegressionUtilities/TestFunctionRegressionUtilities.cpp -o TestFunctionRegressionUtilities.o
+
+# Test pattern recognition utilities
+
+TestPatternRecognitionUtilities.o: ../../TestPatternRecognitionUtilities/TestPatternRecognitionUtilities.cpp
+	g++ -c ../../TestPatternRecognitionUtilities/TestPatternRecognitionUtilities.cpp -o TestPatternRecognitionUtilities.o
+
+# Test perceptron
+
+TestPerceptron.o: ../../TestPerceptron/TestPerceptron.cpp
+	g++ -c ../../TestPerceptron/TestPerceptron.cpp -o TestPerceptron.o
+
+# Test multilayer perceptron
+
+TestMultilayerPerceptron.o: ../../TestMultilayerPerceptron/TestMultilayerPerceptron.cpp
+	g++ -c ../../TestMultilayerPerceptron/TestMultilayerPerceptron.cpp -o TestMultilayerPerceptron.o
+
+MockMultilayerPerceptron.o: ../../TestMultilayerPerceptron/MockMultilayerPerceptron.cpp
+	g++ -c ../../TestMultilayerPerceptron/MockMultilayerPerceptron.cpp -o MockMultilayerPerceptron.o
+
+# Test objective functional
+
+TestObjectiveFunctional.o: ../../TestObjectiveFunctional/TestObjectiveFunctional.cpp
+	g++ -c ../../TestObjectiveFunctional/TestObjectiveFunctional.cpp -o TestObjectiveFunctional.o
+
+MockObjectiveFunctional.o: ../../TestObjectiveFunctional/MockObjectiveFunctional.cpp
+	g++ -c ../../TestObjectiveFunctional/MockObjectiveFunctional.cpp -o MockObjectiveFunctional.o
+
+Polynomial.o: ../../TestObjectiveFunctional/Polynomial.cpp
+	g++ -c ../../TestObjectiveFunctional/Polynomial.cpp -o Polynomial.o
+
+# Test sum squared error
+
+TestSumSquaredError.o: ../../TestSumSquaredError/TestSumSquaredError.cpp
+	g++ -c ../../TestSumSquaredError/TestSumSquaredError.cpp -o TestSumSquaredError.o
+
+# Test mean squared error
+
+TestMeanSquaredError.o: ../../TestMeanSquaredError/TestMeanSquaredError.cpp
+	g++ -c ../../TestMeanSquaredError/TestMeanSquaredError.cpp -o TestMeanSquaredError.o
+
+# Test root mean squared error
+
+TestRootMeanSquaredError.o: ../../TestRootMeanSquaredError/TestRootMeanSquaredError.cpp
+	g++ -c ../../TestRootMeanSquaredError/TestRootMeanSquaredError.cpp -o TestRootMeanSquaredError.o
+
+# Test normalized squared error
+
+TestNormalizedSquaredError.o: ../../TestNormalizedSquaredError/TestNormalizedSquaredError.cpp
+	g++ -c ../../TestNormalizedSquaredError/TestNormalizedSquaredError.cpp -o TestNormalizedSquaredError.o
+
+# Test Minkowski error
+
+TestMinkowskiError.o: ../../TestMinkowskiError/TestMinkowskiError.cpp
+	g++ -c ../../TestMinkowskiError/TestMinkowskiError.cpp -o TestMinkowskiError.o
+
+# Test training algorithm
+
+TestTrainingAlgorithm.o: ../../TestTrainingAlgorithm/TestTrainingAlgorithm.cpp
+	g++ -c ../../TestTrainingAlgorithm/TestTrainingAlgorithm.cpp -o TestTrainingAlgorithm.o
+
+MockTrainingAlgorithm.o: ../../TestTrainingAlgorithm/MockTrainingAlgorithm.cpp
+	g++ -c ../../TestTrainingAlgorithm/MockTrainingAlgorithm.cpp -o MockTrainingAlgorithm.o
+
+# Test random search
+
+TestRandomSearch.o: ../../TestRandomSearch/TestRandomSearch.cpp
+	g++ -c ../../TestRandomSearch/TestRandomSearch.cpp -o TestRandomSearch.o
+
+# Test gradient descent
+
+TestGradientDescent.o: ../../TestGradientDescent/TestGradientDescent.cpp
+	g++ -c ../../TestGradientDescent/TestGradientDescent.cpp -o TestGradientDescent.o
+
+# Test conjugate gradient
+
+TestConjugateGradient.o: ../../TestConjugateGradient/TestConjugateGradient.cpp
+	g++ -c ../../TestConjugateGradient/TestConjugateGradient.cpp -o TestConjugateGradient.o
+
+# Test quasi-Newton method
+
+TestQuasiNewtonMethod.o: ../../TestQuasiNewtonMethod/TestQuasiNewtonMethod.cpp
+	g++ -c ../../TestQuasiNewtonMethod/TestQuasiNewtonMethod.cpp -o TestQuasiNewtonMethod.o
+
+# Test evolutionary algorithm
+
+TestEvolutionaryAlgorithm.o: ../../TestEvolutionaryAlgorithm/TestEvolutionaryAlgorithm.cpp
+	g++ -c ../../TestEvolutionaryAlgorithm/TestEvolutionaryAlgorithm.cpp -o TestEvolutionaryAlgorithm.o
+
+clean:
+	rm $(objects) Flood
+
+
+# Flood: An Open Source Neural Networks C++ Library.
+# Copyright (C) 2005-2009 Roberto Lopez 
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+

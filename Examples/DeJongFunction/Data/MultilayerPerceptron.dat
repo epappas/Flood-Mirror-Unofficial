@@ -1,0 +1,51 @@
+<Flood version='3.0' class='MultilayerPerceptron'>
+<InputsNumber>
+0
+</InputsNumber>
+<HiddenLayersNumber>
+0
+</HiddenLayersNumber>
+<HiddenLayersSize>
+
+</HiddenLayersSize>
+<OutputsNumber>
+0
+</OutputsNumber>
+<IndependentParametersNumber>
+2
+</IndependentParametersNumber>
+<IndependentParametersName>
+<Name>
+x1
+</Name>
+<Name>
+x2
+</Name>
+</IndependentParametersName>
+<IndependentParametersMinimum>
+-5.12 -5.12 
+</IndependentParametersMinimum>
+<IndependentParametersMaximum>
+5.12 5.12 
+</IndependentParametersMaximum>
+<IndependentParametersScalingMethod>
+MinimumMaximum
+</IndependentParametersScalingMethod>
+<IndependentParameters>
+1.64313e-012 1.64313e-012 
+</IndependentParameters>
+<NumericalDifferentiationMethod>
+CentralDifferences
+</NumericalDifferentiationMethod>
+<NumericalEpsilonMethod>
+Relative
+</NumericalEpsilonMethod>
+<NumericalEpsilon>
+1e-006
+</NumericalEpsilon>
+<Display>
+1
+</Display>
+<DisplayRangeOutWarning>
+0
+</DisplayRangeOutWarning>

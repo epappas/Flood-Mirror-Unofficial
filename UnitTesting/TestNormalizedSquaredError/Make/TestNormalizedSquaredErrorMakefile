@@ -1,0 +1,81 @@
+##################################################################################################################
+#                                                                                                                #
+#   T E S T   N O R M A L I Z E D   S Q U A R E D   E R R O R   M A K E F I L E                                  #
+#                                                                                                                #
+#   Roberto Lopez                                                                                                # 
+#   International Center for Numerical Methods in Engineering (CIMNE)                                            #
+#   Technical University of Catalonia (UPC)                                                                      #
+#   Barcelona, Spain                                                                                             #
+#   E-mail: rlopez@cimne.upc.edu                                                                                 #
+#                                                                                                                #
+##################################################################################################################
+
+objects = TestNormalizedSquaredErrorApplication.o \
+          TestNormalizedSquaredError.o \
+          InputTargetDataSet.o \
+          UnitTesting.o \
+          Perceptron.o \
+          MultilayerPerceptron.o \
+          ObjectiveFunctional.o \
+          NormalizedSquaredError.o 
+
+Flood: $(objects)
+	g++ $(objects) -o Flood 
+
+# Main function
+
+TestNormalizedSquaredErrorApplication.o: ../TestNormalizedSquaredErrorApplication.cpp
+	g++ -c ../TestNormalizedSquaredErrorApplication.cpp -o TestNormalizedSquaredErrorApplication.o
+
+# Test normalized squared error
+
+TestNormalizedSquaredError.o: ../TestNormalizedSquaredError.cpp
+	g++ -c ../TestNormalizedSquaredError.cpp -o TestNormalizedSquaredError.o
+
+# Utilities
+
+InputTargetDataSet.o: ../../../Flood/Utilities/InputTargetDataSet.cpp
+	g++ -c ../../../Flood/Utilities/InputTargetDataSet.cpp -o InputTargetDataSet.o
+
+UnitTesting.o: ../../../Flood/Utilities/UnitTesting.cpp
+	g++ -c ../../../Flood/Utilities/UnitTesting.cpp -o UnitTesting.o
+
+# Perceptron
+
+Perceptron.o: ../../../Flood/Perceptron/Perceptron.cpp
+	g++ -c ../../../Flood/Perceptron/Perceptron.cpp -o Perceptron.o
+
+# Multilayer perceptron
+
+MultilayerPerceptron.o: ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp
+	g++ -c ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp -o MultilayerPerceptron.o
+
+# Objective functional
+
+ObjectiveFunctional.o: ../../../Flood/ObjectiveFunctional/ObjectiveFunctional.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/ObjectiveFunctional.cpp -o ObjectiveFunctional.o
+
+NormalizedSquaredError.o: ../../../Flood/ObjectiveFunctional/NormalizedSquaredError.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/NormalizedSquaredError.cpp -o NormalizedSquaredError.o
+
+clean:
+	rm $(objects) Flood
+
+
+# Flood: An Open Source Neural Networks C++ Library.
+# Copyright (C) 2005-2009 Roberto Lopez 
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+

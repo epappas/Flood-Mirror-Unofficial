@@ -1,0 +1,7 @@
+<Flood version='3.0' class='QuasiNewtonMethod' content='TrainingHistory'>
+<EvaluationHistory>
+1 
+</EvaluationHistory>
+<GradientNormHistory>
+0.00049957 
+</GradientNormHistory>

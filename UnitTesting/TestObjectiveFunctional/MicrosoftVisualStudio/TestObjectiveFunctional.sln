@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestObjectiveFunctional", "TestObjectiveFunctional.vcproj", "{F9360521-C781-46D7-AF9F-2B2B97E0ECFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9360521-C781-46D7-AF9F-2B2B97E0ECFE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F9360521-C781-46D7-AF9F-2B2B97E0ECFE}.Debug|Win32.Build.0 = Debug|Win32
+		{F9360521-C781-46D7-AF9F-2B2B97E0ECFE}.Release|Win32.ActiveCfg = Release|Win32
+		{F9360521-C781-46D7-AF9F-2B2B97E0ECFE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

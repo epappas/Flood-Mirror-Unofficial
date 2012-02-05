@@ -1,0 +1,16 @@
+<Flood version='3.0' class='Perceptron'>
+<InputsNumber>
+1
+</InputsNumber>
+<ActivationFunction>
+Logistic
+</ActivationFunction>
+<Bias>
+0
+</Bias>
+<SynapticWeights>
+0 
+</SynapticWeights>
+<Display>
+1
+</Display>

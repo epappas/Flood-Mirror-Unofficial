@@ -1,0 +1,90 @@
+##################################################################################################################
+#                                                                                                                #
+#   T E S T   E V O L U T I O N A R Y   A L G O R I T H M   M A K E F I L E                                      #
+#                                                                                                                #
+#   Roberto Lopez                                                                                                # 
+#   International Center for Numerical Methods in Engineering (CIMNE)                                            #
+#   Technical University of Catalonia (UPC)                                                                      #
+#   Barcelona, Spain                                                                                             #
+#   E-mail: rlopez@cimne.upc.edu                                                                                 #
+#                                                                                                                #
+##################################################################################################################
+
+objects = TestEvolutionaryAlgorithmApplication.o \
+          MockObjectiveFunctional.o \
+          TestEvolutionaryAlgorithm.o \
+          UnitTesting.o \
+          Perceptron.o \
+          MultilayerPerceptron.o \
+          ObjectiveFunctional.o \
+          TrainingAlgorithm.o \
+          EvolutionaryAlgorithm.o 
+
+
+Flood: $(objects)
+	g++ $(objects) -o Flood 
+
+# Main function
+
+TestEvolutionaryAlgorithmApplication.o: ../TestEvolutionaryAlgorithmApplication.cpp
+	g++ -c ../TestEvolutionaryAlgorithmApplication.cpp -o TestEvolutionaryAlgorithmApplication.o
+
+# Mock objective functional
+
+MockObjectiveFunctional.o: ../../TestObjectiveFunctional/MockObjectiveFunctional.cpp
+	g++ -c ../../TestObjectiveFunctional/MockObjectiveFunctional.cpp -o MockObjectiveFunctional.o
+
+# Test evolutionary algorithm
+
+TestEvolutionaryAlgorithm.o: ../TestEvolutionaryAlgorithm.cpp
+	g++ -c ../TestEvolutionaryAlgorithm.cpp -o TestEvolutionaryAlgorithm.o
+
+# Utilities
+
+UnitTesting.o: ../../../Flood/Utilities/UnitTesting.cpp
+	g++ -c ../../../Flood/Utilities/UnitTesting.cpp -o UnitTesting.o
+
+# Perceptron
+
+Perceptron.o: ../../../Flood/Perceptron/Perceptron.cpp
+	g++ -c ../../../Flood/Perceptron/Perceptron.cpp -o Perceptron.o
+
+# Multilayer perceptron
+
+MultilayerPerceptron.o: ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp
+	g++ -c ../../../Flood/MultilayerPerceptron/MultilayerPerceptron.cpp -o MultilayerPerceptron.o
+
+# Objective functional
+
+ObjectiveFunctional.o: ../../../Flood/ObjectiveFunctional/ObjectiveFunctional.cpp
+	g++ -c ../../../Flood/ObjectiveFunctional/ObjectiveFunctional.cpp -o ObjectiveFunctional.o
+
+# Training algorithm
+
+TrainingAlgorithm.o: ../../../Flood/TrainingAlgorithm/TrainingAlgorithm.cpp
+	g++ -c ../../../Flood/TrainingAlgorithm/TrainingAlgorithm.cpp -o TrainingAlgorithm.o
+
+EvolutionaryAlgorithm.o: ../../../Flood/TrainingAlgorithm/EvolutionaryAlgorithm.cpp
+	g++ -c ../../../Flood/TrainingAlgorithm/EvolutionaryAlgorithm.cpp -o EvolutionaryAlgorithm.o
+
+clean:
+	rm $(objects) Flood
+
+
+# Flood: An Open Source Neural Networks C++ Library.
+# Copyright (C) 2005-2009 Roberto Lopez 
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+

@@ -1,0 +1,7 @@
+<Flood version='3.0' class='QuasiNewtonMethod' content='TrainingHistory'>
+<EvaluationHistory>
+5.8 0.0125257 0.00968298 0.0032657 0.000861432 7.47157e-005 2.4046e-006 7.69391e-009 5.45736e-013 1.39041e-014 
+</EvaluationHistory>
+<GradientNormHistory>
+256.347 0.187912 4.2821 4.53616 0.0903815 0.691366 0.0475268 0.00736285 1.86402e-005 2.34876e-006 
+</GradientNormHistory>

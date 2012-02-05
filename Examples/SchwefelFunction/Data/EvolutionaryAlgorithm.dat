@@ -1,0 +1,114 @@
+<Flood version='3.0' class='EvolutionaryAlgorithm'>
+<PopulationSize>
+30
+</PopulationSize>
+<ParametersNumber>
+3
+</ParametersNumber>
+<FitnessAssignmentMethod>
+LinearRanking
+</FitnessAssignmentMethod>
+<SelectionMethod>
+StochasticUniversalSampling
+</SelectionMethod>
+<RecombinationMethod>
+Intermediate
+</RecombinationMethod>
+<MutationMethod>
+Normal
+</MutationMethod>
+<Elitism>
+0
+</Elitism>
+<SelectivePressure>
+1.5
+</SelectivePressure>
+<RecombinationSize>
+0.25
+</RecombinationSize>
+<MutationRate>
+0.333333
+</MutationRate>
+<MutationRange>
+0.1
+</MutationRange>
+<EvaluationGoal>
+-1e+099
+</EvaluationGoal>
+<MeanEvaluationGoal>
+-1e+099
+</MeanEvaluationGoal>
+<StandardDeviationEvaluationGoal>
+0
+</StandardDeviationEvaluationGoal>
+<MaximumGenerationsNumber>
+1000
+</MaximumGenerationsNumber>
+<MaximumTime>
+1e+006
+</MaximumTime>
+<ReservePopulationHistory>
+0
+</ReservePopulationHistory>
+<ReserveBestIndividualHistory>
+0
+</ReserveBestIndividualHistory>
+<ReserveMeanNormHistory>
+0
+</ReserveMeanNormHistory>
+<ReserveStandardDeviationNormHistory>
+0
+</ReserveStandardDeviationNormHistory>
+<ReserveBestNormHistory>
+0
+</ReserveBestNormHistory>
+<ReserveMeanEvaluationHistory>
+1
+</ReserveMeanEvaluationHistory>
+<ReserveStandardDeviationEvaluationHistory>
+1
+</ReserveStandardDeviationEvaluationHistory>
+<ReserveBestEvaluationHistory>
+1
+</ReserveBestEvaluationHistory>
+<ReserveElapsedTimeHistory>
+0
+</ReserveElapsedTimeHistory>
+<Display>
+1
+</Display>
+<DisplayPeriod>
+100
+</DisplayPeriod>
+<Population>
+0.88745 0.341251 -1.09355 
+0.959407 0.322874 -1.24093 
+0.779111 0.403279 -1.14078 
+0.804885 0.601846 -1.36367 
+0.774363 0.337248 -1.21609 
+0.738912 0.349073 -1.14893 
+1.07231 0.349673 -1.10703 
+0.879689 0.50244 -1.04062 
+0.886228 0.377476 -1.1222 
+0.888733 0.283741 -1.20972 
+0.974199 0.536881 -1.30961 
+0.694857 0.333581 -1.16069 
+0.761365 0.367367 -1.04697 
+0.764326 0.34088 -1.14629 
+0.915735 0.466495 -1.16001 
+0.89656 0.307686 -1.06746 
+0.883202 0.327388 -1.21091 
+0.887989 0.316786 -1.17322 
+0.887649 0.322345 -0.986805 
+0.893622 0.17743 -1.20566 
+0.864754 0.334318 -1.10589 
+0.891607 0.315867 -1.14897 
+0.821343 0.45342 -1.19328 
+0.872493 0.241773 -1.14278 
+0.741896 0.435923 -1.18027 
+0.885248 0.388589 -1.25067 
+0.994548 0.413886 -1.18954 
+1.16048 0.358997 -1.13761 
+0.832239 0.456131 -1.13476 
+0.920146 0.303917 -1.15941 
+</Population>
